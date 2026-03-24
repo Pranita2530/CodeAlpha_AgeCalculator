@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@105.8,300..700&family=Zen+Dots&display=swap');
+
+* {
+    color: aliceblue;
+}
+
+body {
+    background: linear-gradient(135deg, #191b1d, #212529);
+    min-height: 100vh;
+}
+
+.zen-dots-regular {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ===== Modern Card Styling ===== */
+form {
+    border: none;
+    border-radius: 25px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Inputs */
+.form-control,
+.form-select {
+    background-color: #2c3034;
+    color: white;
+    border: 1px solid #495057;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.6);
+    border-color: #0d6efd;
+}
+
+.form-control::placeholder {
+    color: #ced4da;
+}
+
+/* Button */
+.btn-primary {
+    background-color: transparent;
+    border: #0d6efd 2px solid;
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0d6efd;
+}
+
+/* Result Animation */
+.result-box {
+    background: linear-gradient(135deg, #343a40, #1f2225);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    transition: all 0.6s ease;
+    width: 65%;
+}
+
+.result-box.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.age-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+p {
+    margin-bottom: 0;
+}
